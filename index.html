@@ -10,13 +10,17 @@
 
 		<!-- Header -->
 			<header id="header">
-				<h1>Ut Potes Age</h1>
-				<p>Ut Potes Age Technology Labs LLC is a private software<br>publishing and digital asset firm specializing in the development of proprietary codebases, core application frameworks, and secure database infrastructure. We manage foundational technology assets and provide business-to-business (B2B) software licensing and intellectual property distribution to operating affiliates and commercial partners under formal intercompany agreements.</p>
+				<h1>Ut Potes Age Technology Labs</h1>
+				<p>Ut Potes Age Technology Labs LLC is a private software publishing and digital asset firm specializing in the development of proprietary codebases, core application frameworks, and secure database infrastructure. We manage foundational technology assets and provide business-to-business (B2B) software licensing and intellectual property distribution to operating affiliates and commercial partners under formal intercompany agreements.</p>
 			</header>
 
 		<!-- Signup Form -->
-			<form id="signup-form" method="post" action="#">
-				<input type="email" name="email" id="email" placeholder="Email Address" />
+			<form id="signup-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+				<input type="hidden" name="form-name" value="contact" />
+				<p style="display: none;">
+					<label>Don’t fill this out: <input name="bot-field" /></label>
+				</p>
+				<input type="email" name="email" id="email" placeholder="Email Address" required />
 				<input type="submit" value="Sign Up" />
 			</form>
 
